@@ -1,0 +1,48 @@
+Primary Colors (Sophisticated & Modern)
+Primary Accent Color:
+Hex: #4A4E69 (Muted Indigo)
+Represents professionalism and trust.
+
+Secondary Accent Color:
+Hex: #F2E9E4 (Soft Cream)
+For contrast and elegance.
+
+Highlight/Call-to-Action (CTA):
+Hex: #9A8C98 (Lavender Gray)
+Eye-catching but not overwhelming.
+
+Neutral Colors
+Background:
+Hex: #F7F5F2 (Warm White) – A clean canvas.
+
+Alternate Background: #22223B (Rich Dark Gray) – For dark mode or sections.
+
+Borders/Dividers:
+Hex: #C9ADA7 (Muted Rose Gold)
+
+Interactive Elements
+Hover Effects and Links:
+Hex: #F28482 (Subtle Coral) – Warm and engaging.
+
+Typography & Font Colors
+Primary Font Color (Headings):
+Hex: #22223B (Rich Dark Gray).
+
+Use fonts like Poppins, Inter, or Roboto Serif for a professional yet trendy look.
+Body Text:
+Hex: #4A4E69 (Muted Indigo).
+
+Hover/Interactive Text:
+Hex: #F28482 (Subtle Coral).
+
+Button Styles
+Primary Button
+Background: #4A4E69 (Muted Indigo).
+Font Color: #F2E9E4 (Soft Cream).
+Hover Background: #22223B (Rich Dark Gray).
+Hover Font Color: #F28482 (Subtle Coral).
+
+Secondary Button
+Background: Transparent with border color #C9ADA7.
+Font Color: #4A4E69.
+Hover: Filled with #C9ADA7.
