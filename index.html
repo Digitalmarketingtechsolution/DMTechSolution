@@ -10,6 +10,10 @@
     <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>DM Tech Solution</title>
+    
+    <!-- Favicons -->
+  <link href="assets/Dm tếch logo in white.png" rel="icon">
+  <link href="assets/Dm tếch logo in white.png" rel="apple-touc">
 
     <!-- font awesome link-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -20,28 +24,30 @@
     <div>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolled" id="navbar">
         <a class="navbar-brand text-white" href="#">
-            <img src="assets\logo.jpg"/> <span class="logo-name">DMTS</span>
+            <img src="assets\logo.png"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-aos="fade-up" data-aos-delay="400">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#About Us">About Us</a>
-                <a class="nav-link" href="#features">Features</a>
-                <a class="nav-link" href="#services">Services</a>
-                <a class="nav-link" href="#price">Prices</a>
-                <a class="nav-link" href="#team">Team</a>
-                <button class="contact-button"><a class="nav-link" href="#contactUs">contact Us</a> <i class="fas fa-arrow-right"></i></button>
+        <div class="collapse navbar-collapse text-center item-container" id="navbarNavAltMarkup" data-aos="fade-up" data-aos-delay="400">
+            <div class="navbar-nav m-auto text-center">
+                <a class="nav-link item" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link item" href="#About Us">About Us</a>
+                <a class="nav-link item" href="#features">Features</a>
+                <a class="nav-link item" href="#services">Services</a>
+                <a class="nav-link item" href="#price">Prices</a>
+                <a class="nav-link item" href="#team">Team</a>
             </div>
+        </div>
+        <div class="contact-button">
+          <a href="#contactUs">Contact Us</a>
         </div>
       </nav>
     </div>
 
     <!-- hero section -->
     <section class="hero  containers" id="home">
-        <div class="hero-content slide-in-container containers">
+        <div class="hero-content ml-4 p-4 slide-in-container containers">
           <h1 id="hero-title">Empowering Your Business</h1>
           <p id="hero-description">We provide top-notch solutions to help your business thrive in the digital era. From web development to marketing, we have you covered.</p>
           <h5>★★★★★Worked With 2+ Companies</h5>
@@ -57,16 +63,16 @@
           <p>We work with leading companies to provide exceptional services and solutions that help businesses grow.</p>
           <div class="collaboration-cards">
               <div class="collaboration-card">
-                  <img src="assets\company1.webp" alt="Company 1">
-                  <h3>SV Tech Solutions</h3>
-                  <p>We have partnered with Company 1 to drive innovation and provide tailored solutions for their clients. Our collaboration focuses on improving efficiency and user experience.</p>
-                  <a href="#" class="learn-more">Know More</a>
+                  <img src="assets\company1.jpeg" alt="Company 1">
+                  <h3>TS BridgeEdu</h3>
+                  <p>We have partnered with TS BridgeEdu to drive innovation and provide tailored solutions for their clients. Our collaboration focuses on improving efficiency and user experience.</p>
+                  <a href="https://tsbridgeedu.in/" class="learn-more">Know More</a>
               </div>
               <div class="collaboration-card">
-                  <img src="assets\company2.webp" alt="Company 2">
-                  <h3>TCS</h3>
-                  <p>Our collaboration with Company 2 has helped them expand their services and grow their client base by integrating our expertise in digital solutions.</p>
-                  <a href="#" class="learn-more">Know More</a>
+                  <img src="assets\company2.jpeg" alt="Company 2">
+                  <h3>Startupodero</h3>
+                  <p>Our collaboration with Startupodero has helped them expand their services and grow their client base by integrating our expertise in digital solutions.</p>
+                  <a href="https://www.startapoderoventures.com/" class="learn-more">Know More</a>
               </div>
           </div>
       </div>
@@ -85,7 +91,7 @@
             <p>
               Join hands with us, and let's create a future full of possibilities. We specialize in collaboration, ensuring your success becomes our shared journey.
             </p>
-            <a href="#contact" class="about-btn">Collaborate with Us</a>
+            <a href="#contactUs" class="about-btn">Collaborate with Us</a>
           </div>
           <div class="about-image">
             <img src="assets\aboutUs.jpg" alt="About Us">
@@ -215,7 +221,7 @@
           <button class="option-btn" onclick="updateAmount('redesign', 'basic')">Basic Package</button>
           <button class="option-btn" onclick="updateAmount('redesign', 'standard')">Standard Package</button>
           <button class="option-btn" onclick="updateAmount('redesign', 'premium')">Premium Package</button>
-          <p class="total-amount">Total Cost: $<span id="redesign-total">0</span></p>
+          <p class="total-amount">Total Cost: ₹<span id="redesign-total">0</span></p>
           <a href="#contactUs" class="contact-btn">Contact for Details</a>
         </div>
       </div>
@@ -228,7 +234,7 @@
           <button class="option-btn" onclick="updateAmount('custom', 'basic')">Basic Package</button>
           <button class="option-btn" onclick="updateAmount('custom', 'standard')">Standard Package</button>
           <button class="option-btn" onclick="updateAmount('custom', 'premium')">Premium Package</button>
-          <p class="total-amount">Total Cost: $<span id="custom-total">0</span></p>
+          <p class="total-amount">Total Cost: ₹<span id="custom-total">0</span></p>
           <a href="#contactUs" class="contact-btn">Contact for Details</a>
         </div>
       </div>
@@ -237,60 +243,37 @@
   
   <!-- Our Team Section -->
   <section class="team-section containers" id="team">
-    <h2 class="team-title">Our Dedicated Team</h2>
-  
-    <!-- Team Category -->
-    <div class="team-container">
-      <!-- Co-Founders -->
-      <div class="team-group">
-        <h3 class="category-title">Co-Founders</h3>
-        <div class="team-card">
-          <img src="assets\professional (1).jpg" alt="Co-Founder 1" class="team-photo" />
-          <h4 class="team-name">Ms Dhoni</h4>
-          <p class="team-role">Co-Founder & CEO</p>
-        </div>
-        <div class="team-card">
-          <img src="assets\professional (1).jpg" alt="Co-Founder 2" class="team-photo" />
-          <h4 class="team-name">KIng Kohli</h4>
-          <p class="team-role">Co-Founder & CTO</p>
+    <h2 class="team-title">Founders</h2>
+    <div class="founder-card-container">
+      <!-- Founder 1 -->
+      <div class="founder-card">
+        <img src="assets\Founder.jpeg" alt="Founder 1" class="founder-image" />
+        <h3 class="founder-name">M Koushik Vardhan</h3>
+        <p class="founder-title">Founder</p>
+        <p class="founder-description">
+          Visionary leader  in tech innovation, driving success for DM Tech Solutions.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/koushikvardhan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/KoushikVar26956" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-  
-      <!-- Full Stack Developers -->
-      <div class="team-group">
-        <h3 class="category-title">Full Stack Developers</h3>
-        <div class="team-card">
-          <img src="assets\professional (1).jpg" alt="Developer 1" class="team-photo" />
-          <h4 class="team-name">Hit Man</h4>
-          <p class="team-role">Full Stack Developer</p>
-        </div>
-        <div class="team-card">
-          <img src="assets\professional (1).jpg" alt="Developer 2" class="team-photo" />
-          <h4 class="team-name">Warner</h4>
-          <p class="team-role">Full Stack Developer</p>
-        </div>
-      </div>
-  
-      <!-- HR -->
-      <div class="team-group">
-        <h3 class="category-title">HR</h3>
-        <div class="team-card">
-          <img src="assets\professional (1).jpg" alt="HR Head" class="team-photo" />
-          <h4 class="team-name">Yuvaraj</h4>
-          <p class="team-role">Head of HR</p>
-        </div>
-      </div>
-  
-      <!-- Team Managers -->
-      <div class="team-group">
-        <h3 class="category-title">Team Managers</h3>
-        <div class="team-card">
-          <img src="assets\professional (1).jpg" alt="Team Manager" class="team-photo" />
-          <h4 class="team-name">Smith</h4>
-          <p class="team-role">Team Manager</p>
+    
+      <!-- Founder 2 -->
+      <div class="founder-card">
+        <img src="assets\coFounder.jpeg" alt="Founder 2" class="founder-image" />
+        <h3 class="founder-name">Shaik Shamimuddin</h3>
+        <p class="founder-title">Co-Founder</p>
+        <p class="founder-description">
+          Tech expert specializing in cutting-edge solutions, ensuring high-performance delivery.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shaik-shamim-75798331b" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/Shaikshami20247?t=9ZCjXpWngaVtl4Zzhewoew&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
     </div>
+    
   </section>
   
   
@@ -299,10 +282,10 @@
   <div class="contact-section" id="contactUs">
     <div class="contact-content containers">
         <div class="contact-form">
-            <h2>Get in Touch</h2>
+            <h2>Be With Us</h2>
             <hr/>
             <p>Have any questions or feedback? We’d love to hear from you!</p>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="resetForm()">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -314,10 +297,14 @@
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
+                  <label for="number">Mobile Number</label>
+                  <input type="tel" id="number" name="number" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your number" required>
+                </div>
+                <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn">Get Us</button>
             </form>
         </div>
         <div class="contact-image">
@@ -331,22 +318,19 @@
     <div class="footer-section container-fluid containers">
       <div class="row">
           <div class="text-center col-12 col-md-6 col-lg-3 justify-content-md-start text-md-left">
-              <img src="  https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png " class="image" />
+              <img src="assets/Dm tếch logo in white.png" class="image" />
               <div class="d-flex flex-row justify-content-center justify-content-md-start ">
                   <div>
-                    <a href="https://www.linkedin.com/in/ahmadjaved123/"><i class="fab fa-google icon-style"></i></a>
+                    <a href="https://x.com/Dm65168Tech" target="_blank"><i class="fab fa-twitter icon-style"></i></a>
                   </div>
                   <div>
-                    <a href="https://www.linkedin.com/in/ahmadjaved123/"><i class="fab fa-twitter icon-style"></i></a>
+                    <a href="https://www.instagram.com/dm_tech_solution_/" target="_blank"><i class="fab fa-instagram icon-style"></i></a>
                   </div>
                   <div>
-                    <a href="https://www.instagram.com/dm_tech_solution_/"><i class="fab fa-instagram icon-style"></i></a>
-                  </div>
-                  <div>
-                    <a href="https://www.linkedin.com/company/dm-tech-solution/"><i class="fab fa-linkedin icon-style"></i></a>
+                    <a href="https://www.linkedin.com/company/dm-tech-solution/" target="_blank"><i class="fab fa-linkedin icon-style"></i></a>
                   </div>
               </div>
-              <h5>37,Eluru Andhra Pradesh,india</h5>
+              <h5>Ashok Nagar,Eluru Andhra Pradesh,534002,india</h5>
           </div>
           <div class="col-6 col-lg-3  text-md-left justify-content-md-start  ">
               <h4>Get to know us</h4>

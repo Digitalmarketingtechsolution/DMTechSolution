@@ -74,8 +74,8 @@ setInterval(changeContent, 3000);
 
 // Pricing Data
 const prices = {
-  redesign: { basic: 199, standard: 499, premium: 999 },
-  custom: { basic: 299, standard: 799, premium: 1499 },
+  redesign: { basic: "15,000", standard: "20,000", premium: "25,000" },
+  custom: { basic: "20,000", standard: "25,000", premium: "30,000" },
 };
 
 // Update Total Amount Function
@@ -83,4 +83,13 @@ function updateAmount(card, option) {
   const amount = prices[card][option];
   const totalElement = document.getElementById(`${card}-total`);
   totalElement.innerText = amount;
+}
+
+
+// reseting the form
+function resetForm() {
+  // Use setTimeout to reset form after submission
+  setTimeout(() => {
+    document.getElementById("contactForm").reset();
+  }, 5000); // Wait 1 second to ensure submission completes
 }
